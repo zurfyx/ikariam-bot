@@ -4,4 +4,5 @@ services:
     build: .
     command: npm run dev
     volumes:
-      - .:/app
+      - .:/usr/app/
+      - /usr/app/node_modules
