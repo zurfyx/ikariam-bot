@@ -13,6 +13,7 @@ export const CONFIG = {
         crystal: 100,
         sulphur: 100,
       },
+      timezone: 'Europe/London', // https://momentjs.com/timezone/
     },
   ],
 };

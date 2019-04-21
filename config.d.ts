@@ -12,5 +12,6 @@ export const CONFIG: {
       crystal?: number,
       sulphur?: number,
     },
+    timezone: string,
   }[],
 };

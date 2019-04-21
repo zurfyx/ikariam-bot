@@ -37,7 +37,7 @@ async function tradeRoutes() {
         ...tradeRoute.goods,
       });
       console.info('-- [Cron-end] Trade Route --');
-    }, null, true, 'Europe/London');
+    }, null, true, tradeRoute.timezone);
   });
 }
 
