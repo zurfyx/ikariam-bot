@@ -4,19 +4,22 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon -e ts -w ./src -x npm run dev:serve",
+    "dev": "nodemon --legacy-watch -e ts -w ./src -x npm run dev:serve",
     "dev:serve": "node --inspect -r ts-node/register src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "tslint --project ."
   },
   "dependencies": {
     "cron": "^1.7.0",
+    "agenda": "^2.0.2",
+    "agendash": "^1.0.0",
     "node-fetch": "^2.3.0",
     "typescript": "^3.4.3",
     "xmldom": "^0.1.27"
   },
   "devDependencies": {
     "@types/cron": "^1.7.0",
+    "@types/agenda": "^2.0.4",
     "@types/node-fetch": "^2.3.2",
     "@types/xmldom": "^0.1.29",
     "nodemon": "^1.18.11",

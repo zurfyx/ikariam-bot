@@ -1,3 +1,4 @@
+import * as Agenda from 'agenda';
 import { CronJob } from 'cron';
 import { CONFIG } from '../config';
 import { load } from './game';
@@ -42,6 +43,19 @@ async function tradeRoutes() {
 }
 
 (async() => {
+  const agenda = new Agenda({
+    db: {
+      address: 'mongodb://db:27017/agenda',
+      options: {
+        useNewUrlParser: true,
+      },
+    },
+  });
+  
+  await agenda.start();
+
+  return;
+
   await overview();
   await tradeRoutes();
 
