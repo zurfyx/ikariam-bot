@@ -1,4 +1,4 @@
-export const CONFIG = {
+ const CONFIG = {
   username: '<user>',
   password: '<password>',
   tradeRoutes: [
@@ -17,3 +17,5 @@ export const CONFIG = {
     },
   ],
 };
+
+module.exports = { CONFIG };
